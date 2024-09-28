@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Backyard - Full Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://images.squarespace-cdn.com/content/v1/5edaf010f96c3956a9022210/1592404250825-MVQHI2TRXKWOEOCA57AZ/UB+Logo+white.PNG"
+                alt="Urban Backyard Logo">
+            Urban Backyard
+        </div>
+
+        <div id="cart">
+            <a href="home.html" class="back-button">
+                Back
+                <i class="fa-solid fa-backward-step"></i>
+            </a>
+
+            <span id="cart-count">0</span>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="menu-section">
+        <h2>Our Full Menu</h2>
+        <div class="menu-grid">
+            <!-- Menu Item Card -->
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/474x/81/12/54/8112544f16c5e5e5ee67446ff3a73e6b.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>A classic Italian coffee with rich espresso and steamed milk, topped with a thick layer of foam.</p>
+                <p><strong>Price: $3.99</strong></p>
+                <button onclick="addToCart('cappuccino', 3.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/474x/33/12/72/3312727f3f47de7a816aec2887bb03b5.jpg" alt="Vegan Salad">
+                <h3>Vegan Salad</h3>
+                <p>A healthy mix of garden-fresh vegetables with a light olive oil and lemon dressing.</p>
+                <p><strong>Price: $5.99</strong></p>
+                <button onclick="addToCart('vegan-salad', 5.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMUlqxIloDrthhVWMvxYq7XeGAuiqaLfE6JWZKo=s1360-w1360-h1020"
+                    alt="Toast">
+                <h3>Ube Breakfast Toast</h3>
+                <p>Toasted sourdough topped with ube spread, banana slices, and a drizzle of honey.</p>
+                <p><strong>Price: $6.50</strong></p>
+                <button onclick="addToCart('Toast', 6.50)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipObtaKcKJZV4rsZIvgvdnaJlHHNWyNzHyvTFN86=s1360-w1360-h1020"
+                    alt="Macarons">
+                <h3>Macarons (Single)</h3>
+                <p>Delicate French macarons in a variety of flavors, crispy on the outside and soft on the inside.</p>
+                <p><strong>Price: $2.50</strong></p>
+                <button onclick="addToCart('Macarons', 2.50)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMWgfxq_0iE4EIwFaXgD239YjTwtxHTP589-f4z=s1360-w1360-h1020"
+                    alt="Cream Cheese Bagel">
+                <h3>Cream Cheese Bagel</h3>
+                <p>A freshly baked bagel generously topped with creamy and smooth cream cheese.</p>
+                <p><strong>Price: $4.50</strong></p>
+                <button onclick="addToCart('Cream Cheese Bagel', 4.50)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNZr0NgbNQY4UViLtMVSRXWnQhQSZ9HarxYPYIt=s1360-w1360-h1020"
+                    alt="Ube Latte">
+                <h3>Ube Latte</h3>
+                <p>A creamy latte with sweet and earthy ube flavor, topped with ube whipped cream.</p>
+                <p><strong>Price: $8.00</strong></p>
+                <button onclick="addToCart('Ube Latte', 8.00)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOHcnW2XpabVGuUXhDLl8yqh2jg-njWvj6JlY5N=s1360-w1360-h1020"
+                    alt="Botanical Cupcakes">
+                <h3>Botanical Cupcakes (Box of 2)</h3>
+                <p>Handmade cupcakes with floral-infused frosting, decorated with edible flowers.</p>
+                <p><strong>Price: $7.00</strong></p>
+                <button onclick="addToCart('Botanical Cupcakes', 7.00)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPSzlxY6j2-FRrIPRj0efBLeGvm_whspt0IYPcU=s1360-w1360-h1020"
+                    alt="Floral Latte">
+                <h3>Floral Latte</h3>
+                <p>Aromatic latte infused with lavender, rose, and other floral flavors.</p>
+                <p><strong>Price: $7.00</strong></p>
+                <button onclick="addToCart('Floral Latte', 7.00)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/474x/30/e5/9b/30e59b571a20a65df42772db2541c263.jpg" alt="Lasagna">
+                <h3>Lasagna</h3>
+                <p>Classic Italian lasagna layered with rich tomato sauce, ground beef, and creamy béchamel.</p>
+                <p><strong>Price: $5.99</strong></p>
+                <button onclick="addToCart('Lasagna', 5.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/474x/f0/16/62/f016628ed0d4115c09e7c66e1ab441bc.jpg" alt="Aglio e olio">
+                <h3>Aglio e olio</h3>
+                <p>Simple and flavorful pasta tossed in olive oil, garlic, chili flakes, and fresh parsley.</p>
+                <p><strong>Price: $6.99</strong></p>
+                <button onclick="addToCart('Aglio e olio', 6.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/474x/05/43/49/054349a2911104caa84c099b2cbc2148.jpg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Simple and flavorful pasta tossed in olive oil, garlic, chili flakes, and fresh parsley.</p>
+                <p><strong>Price: $6.99</strong></p>
+                <button onclick="addToCart('Sushi', 6.99)">Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/474x/f9/b8/dd/f9b8dd52a24ea5d2ead12352d453fdea.jpg" alt="Shawarma">
+                <h3>Shawarma</h3>
+                <p>Simple and flavorful pasta tossed in olive oil, garlic, chili flakes, and fresh parsley.</p>
+                <p><strong>Price: $6.99</strong></p>
+                <button onclick="addToCart('Shawarma', 6.99)">Add to Cart</button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div id="popup-message" class="popup-message hidden">Item added to cart!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

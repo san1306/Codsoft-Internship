@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Urban Backyard</title>
+    <link rel="stylesheet" href="details-styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://images.squarespace-cdn.com/content/v1/5edaf010f96c3956a9022210/1592404250825-MVQHI2TRXKWOEOCA57AZ/UB+Logo+white.PNG"
+                alt="Urban Backyard Logo">
+            Urban Backyard
+        </div>
+        <div id="back">
+            <a href="home.html" class="back-button">
+                Back
+                <i class="fa-solid fa-backward-step"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="checkout-section">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="name">Phone Number:</label>
+            <input type="text" id="number" name="number" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash-on-delivery">Cash on Delivery</option>
+            </select>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </section>
+
+    <script>
+        // Handle form submission
+        document.getElementById('checkout-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+            alert('Thank you for your order!'); // You can implement actual payment logic here
+            // You can redirect to a payment gateway or another page here if needed
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(24.71, 26.56%, 74.9%, 1);
+    /* Light background color */
+    color: hsla(96.52, 10.8%, 41.76%, 1);
+    /* Text color */
+}
+
+header {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space between title and back button */
+    align-items: center;
+    width: 100%;
+    /* Center items vertically */
+    background-color: hsla(96.52, 10.8%, 41.76%, 1);
+    /* Darker header color */
+    color: white;
+    padding: 1rem;
+    /* Adjust padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+#back {
+    display: flex;
+    /* Use flexbox for back button layout */
+    align-items: center;
+    /* Center items vertically */
+}
+
+#back img {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.back-button {
+    margin-right: 15px;
+    /* Space between the icons */
+    font-size: 18px;
+    /* Increases the size of the icons */
+    color: white;
+    /* Sets color to black */
+    text-decoration: none;
+    /* Removes underline from links */
+}
+
+
+.back-button:hover {
+    color: rgb(182, 83, 111);
+    /* Color change on hover */
+}
+
+.checkout-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: white;
+    /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid hsla(96.52, 10.8%, 41.76%, 1);
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: hsla(96.52, 10.8%, 41.76%, 1);
+    /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsla(24.71, 26.56%, 74.9%, 1);
+    /* Button hover color */
+}
